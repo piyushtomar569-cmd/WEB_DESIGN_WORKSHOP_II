@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            background-image: url(portugal\ image.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .overlay{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            color: white;
+            flex-direction: column;
+        }
+        .title{
+            color: white;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 10px;
+
+        }
+        .col{
+            width: 1000px;
+            margin-top: 10px;
+            /* border:1px solid orange; */
+          display: flex;
+          justify-content: center;
+          
+          color: white;
+        }
+        .col div{
+            width: 250px;
+            text-align: center;
+        }
+        input{
+            height: 50px;
+            width:50%;
+            background-color: rgba(255,255,255,0.7);
+            border-color: transparent;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="overlay">
+            <div class="title">We are comming soon</div>
+            <div class="title" class="end-date">20 March 2026 10::00pm</div>
+            <div class="col">
+                <div><input type="text" readonly><br/>
+                <label for="">Days</label></div>
+                <div><input type="text" readonly><br/>
+                <label for="">hours</label></div>
+                <div><input type="text" readonly><br/>
+                <label for="">minute</label></div>
+                <div><input type="text" readonly><br/>
+                <label for="">seconds</label></div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="count.js"></script>
+</body>
+</html>
