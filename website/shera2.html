@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+}
+
+.navbar{
+    background-color: whitesmoke;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid black;
+  position: fixed;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: black;
+}
+
+.container{
+  display: flex;
+  height: 100vh;
+}
+
+.box1{
+  flex: 1;
+  padding-top: 70px;
+  padding-left: 40px;
+  width: 50%;
+  font-size: 40px;
+}
+.box1 p{
+   padding-top: 20px;
+   font-size: 30px;
+}
+.box2{
+width: 50%;
+display: flex;
+}
+.box1 span{
+    color: orange;
+}
+.explore {
+    padding-top: 30px;
+}
+.explore button{
+background-color: orange;
+border-style: none;
+padding: 13px;
+border-radius: 5px;
+color: white;
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="home"><a href="#">Home</a></div>
+
+  <nav>
+    <ul>
+      <li><a href="#">Info</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="box1">
+    <h2>Learn form the <span>coolest</span> coding paltform of india.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis cumque consectetur ad illo sunt animi, unde, pariatur quaerat commodi modi iste corrupti, laborum sed! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel libero voluptates, totam officiis temporibus pariatur reiciendis corrupti dolorem assumenda ex!</p>
+    <div class="explore">
+        <button>Explore Now</button>
+    </div>
+  </div>
+  <div class="box2">
+<img src="shera.jpg" >
+  </div>
+</div>
+
+</body>
+</html>
