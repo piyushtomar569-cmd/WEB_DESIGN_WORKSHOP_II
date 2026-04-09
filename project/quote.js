@@ -7,7 +7,9 @@ const quotes = ["The universe is not obligated to make sense to you." ,
 "Knowledge grows where ego shrinks.",
 
 "Most limits are stories we repeat.",
+                
 "The mind is a tool; sharpen it daily,.",
+                
 "Truth survives inspection.",
 
 "Small improvements compound into extraordinary change.",
