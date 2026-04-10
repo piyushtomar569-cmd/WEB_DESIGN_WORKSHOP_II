@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Student Attendance</h2>
+    <h3>Rahul - <span class="student">Absent</span></h3>
+    <h3>Priya - <span class="student">Absent</span></h3>
+    <h3>Aman - <span class="student">Absent</span></h3>
+    <button onclick="changeText()">Mark all present</button>
+    <script>
+        function changeText(){
+            let student = document.getElementsByClassName("student")
+            for(let i=0;i<student.length;i++){
+            student[i].innerHTML = "Present";
+            student[i].style.color = "green";
+}
+        }
+    </script>
+</body>
+</html>
