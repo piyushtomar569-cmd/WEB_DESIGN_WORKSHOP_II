@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Color</title>
+  <style>
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+         align-items: center;
+        justify-content: center;
+    }
+    button {
+        padding: 20px;
+        border-radius: 30px;background-color: black;
+        color: white;
+        border: none;
+         box-shadow: 5px 5px 10px gray;
+          cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<button id="btn">Change Background</button>
+
+<script>
+  let button = document.getElementById("btn");
+  button.addEventListener("click", function() {
+    let colors = ["red", "green", "blue", "yellow", "purple"];
+    let randomIndex = Math.floor(Math.random() * colors.length);
+    document.body.style.backgroundColor = colors[randomIndex];
+  });
+</script>
+</body>
+</html>
