@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>DOM Manipulation and Event Handling</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .container {
+            background: white;
+            width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            color: white;
+            background-color: #007bff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #para {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 id="heading">
+            Welcome to JavaScript DOM
+        </h1>
+
+        <p id="para">
+            This paragraph can be changed dynamically.
+        </p>
+
+        <input type="text"
+            id="userInput"
+            placeholder="Enter new heading text">
+
+        <br>
+
+        <button onclick="changeText()">
+            Change Heading
+        </button>
+
+        <button onclick="changeStyle()">
+            Change Style
+        </button>
+
+        <button onclick="toggleParagraph()">
+            Show / Hide Paragraph
+        </button>
+
+        <button onclick="resetPage()">
+            Reset
+        </button>
+
+    </div>
+
+    <script>
+
+        // Change Heading Text
+        function changeText() {
+
+            let newText =
+                document.getElementById("userInput").value;
+
+            document.getElementById("heading").innerHTML =
+                newText;
+        }
+
+        // Change Style
+        function changeStyle() {
+
+            document.body.style.backgroundColor = "lightblue";
+
+            document.getElementById("heading").style.color = "red";
+
+            document.getElementById("heading").style.fontSize = "40px";
+        }
+
+        // Show / Hide Paragraph
+        function toggleParagraph() {
+
+            let para =
+                document.getElementById("para");
+
+            if (para.style.display === "none") {
+                para.style.display = "block";
+            }
+
+            else {
+                para.style.display = "none";
+            }
+        }
+
+        // Reset Page
+        function resetPage() {
+
+            document.body.style.backgroundColor = "#f2f2f2";
+
+            document.getElementById("heading").innerHTML =
+                "Welcome to JavaScript DOM";
+
+            document.getElementById("heading").style.color = "black";
+
+            document.getElementById("heading").style.fontSize = "32px";
+
+            document.getElementById("para").style.display = "block";
+
+            document.getElementById("userInput").value = "";
+        }
+
+    </script>
+
+</body>
+</html>
